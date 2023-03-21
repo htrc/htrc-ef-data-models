@@ -5,7 +5,7 @@ description = "A library of data classes representing objects in the Extracted F
 authors = ["cwulfman <cwulfman@princeton.edu>"]
 readme = "README.md"
 packages = [
-  {include = "htrc/datamodels/ef" from "src"}
+  {include = "htrc/ef/datamodels" from "src"}
 ]
 
 [tool.poetry.dependencies]
