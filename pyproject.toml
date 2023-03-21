@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "htrc-ef-data-models"
+version = "0.1.0"
+description = "A library of data classes representing objects in the Extracted Features 2.0 data model"
+authors = ["cwulfman <cwulfman@princeton.edu>"]
+readme = "README.md"
+packages = [
+  {include = "htrc/datamodels/ef" from "src"}
+]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pydantic = "^1.10.6"
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.299"
+pytest = "^7.2.2"
+black = "^23.1.0"
+flake8 = "^6.0.0"
+isort = "^5.12.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
